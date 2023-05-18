@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+          <ul class="flex-outer">
+            <h2>Trip Information</h2>
+            <li>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Enter your first name here">
+            </li>
+            <li>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Enter your last name here">
+            </li>
+         <p>
+                <label for="gender">GENDER:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+           </p>
+            <li>
+            <label for="">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select><br>
+            
+            </li>
+            <li><label for="trip_dates">Trip Dates:</label>
+                <input type="date" id="trip_dates" name="trip_dates" required><br></li>
+            <li>
+              <label for="message">Trip Notes</label>
+              <textarea rows="6" id="message" placeholder="Enter your Trip here"></textarea>
+            </li>
+            
+              
+            <li>
+              <button type="submit"><a href="card.html">submit</a></button>
+            </li>
+          </ul>
+        </form>
+      </div>
